@@ -1,6 +1,4 @@
 from flask import Flask, request, jsonify, url_for, render_template
-import uuid
-import os
 from tensorflow.keras.models import load_model
 import numpy as np
 from werkzeug.utils import secure_filename
