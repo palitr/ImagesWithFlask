@@ -3,7 +3,6 @@ import uuid
 import os
 from tensorflow.keras.models import load_model
 import numpy as np
-#from werkzeug import secure_filename
 from werkzeug.utils import secure_filename
 from tensorflow.keras.applications import MobileNet
 from PIL import Image, ImageFile
@@ -17,8 +16,6 @@ ALLOWED_EXTENSION  =set(['txt', 'pdf', 'png','jpg','jpeg','gif'])
 IMAGE_HEIGHT =224
 IMAGE_WIDTH = 224
 IMAGE_CHANNELS = 3
-#os.chdir(r'C:\Users\danie\Desktop\Flask UdemyKurs')
-
 
 def allowed_file(filename):
     return '.' in filename and      filename.rsplit('.',1)[1] in ALLOWED_EXTENSION
